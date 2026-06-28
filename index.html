@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div class="header-icon">&#10003;</div>
+            <div>
+                <h1>My Tasks</h1>
+                <p class="subtitle">Stay organised, stay focused.</p>
+            </div>
+        </div>
+
+        <div class="input-row">
+            <input type="text" id="fname" placeholder="Add a new task...">
+            <button class="btn">Add</button>
+        </div>
+
+        <div class="section-label">
+            <span>Today</span>
+            <span class="task-count" id="taskCount">0 tasks</span>
+        </div>
+
+        <div class="result" id="result">
+            <div class="empty-state" id="emptyState">
+                <span>&#128196;</span>
+                <p>No tasks yet. Add one above!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
